@@ -1,0 +1,311 @@
+
+body {
+    background-image: url('C:/Users/pooji/Desktop/HI//images/background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;   
+}
+
+div.header {
+    display: flex;
+    flex-direction: row;
+}
+
+div.header2 {
+    left: 1200px;
+    position: relative;
+}
+
+.centermain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 250px 0 ;
+    
+}
+
+.top:hover,
+.top:focus {
+    background-color:#ffd633;
+    cursor: pointer;
+}
+
+.top {
+    size: 100px;
+    background-color:#346beb;
+    color:white;
+    padding: 10px;
+    display:inline-flex;
+    text-decoration: none;
+    list-style-type:none;	
+}
+
+.center1 {
+    size: 60px;
+    color:black ;
+    background-color:#ffd633;
+    padding: 8px;
+    width: 100px;
+    margin-right: 16px;
+    
+}
+.center1:hover,
+.center1:focus {
+    background-color:#346beb;
+    cursor: pointer;
+    color:white;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.secondimg{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.thridimg{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.one{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.three{
+    color:white;
+    display: none; /* Hidden by default */
+    position: fixed;; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+
+    padding-top: 60px;
+
+}
+
+
+/* Modal Content/Box */
+.modal-content  {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%;
+    height:50%; /* Could be more or less, depending on screen size */
+             /*depend on the height*/
+}
+.second-signUp{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 25%;
+    height:65%; /* Could be more or less, depending on screen size */
+}   
+.thrid-signUp{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    height:70%; /* Could be more or less, depending on screen size */
+}          
+
+/* The Close Button (x) */
+.close {
+    position:absolute;
+    right: 25px;
+    top: 0;
+    color:gray;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+}
+
+.label-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+.iot{
+    font-weight:bold;
+    background-color: lightgray;
+    border:none;
+    width:90%
+}
+.bye{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 92%;
+    margin-left: 5%;
+    }
+    .submit-btn {
+        background-color:green;
+        width:96%;
+        color: #fff;
+        padding: 3%;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .hi{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 92%;
+        margin-left: 5%;
+    }
+    .hot{
+        font-weight:bold;
+    background-color: lightgray;
+    border:none;
+    width:90%
+
+    }
+    .horizontal-line{
+        width:96%;
+        height:2px;
+        background-color: silver;
+    }
+
+/*centerbuttons*/
+
+    .hello{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width:100%;
+        height:100%;
+        margin-left: 2%;
+    }
+    /*upto*/
+    .mec{
+        color:gray;
+        background-color: lightgray;
+        border:none;
+        width:100%
+    
+
+    }
+    .para{
+        color:gray;
+        text-align: start;
+        margin-left:2%;
+    }
+    .horizontal-line1{
+        width:94%;
+        height:2px;
+        background-color: silver;
+    }
+    .btn{
+        background-color:green;
+        text-align: center;
+        width:20%;
+        color: #fff;
+        padding: 1%;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+        margin:0;
+        position: relative;
+        transform:translate(200%,-10%);
+        
+    }
+
+a {
+    font-size: 14px;
+    color: #186CA3;
+    text-decoration: none;
+}
+
+
+
+
+p{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+ 
+  
+    #text{
+        
+        margin-top:10px;
+        width:92%;
+        height:90%;
+        }
+ 
+
+
+#Username{
+    width:90.5%;
+
+}
+.input-board{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+.signUp{
+    color: blue;
+    cursor: pointer;
+}

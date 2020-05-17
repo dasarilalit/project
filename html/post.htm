@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        </head>
+        <link rel="stylesheet" type="text/css" href="C:/Users/pooji/Desktop/mainproject/styles/post.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+        <div class="header">
+	
+            <div class = "header1">
+                <header id="font1">ScriBBler</header>
+                <h5 id='font2'>Explore, Imagine, Create</h5>
+            </div> 
+            
+            <div class = "header2">
+                <button class ="top" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">SignUp</button>
+             <div id="id02" class="one"> 
+    
+    
+               <form class="second-signUp" action="#">
+                <div class="secondimg">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+    
+                       <div class="bye"> 
+                    <h3> Get started </h3>
+                    
+                    <div class= "horizontal-line"></div>
+                             
+                            <label for="Name" class="label-text">Name</label>
+                            <input type="text" class="iot" id="Username" placeholder="Enter your name" required>
+    
+    
+                            <label for="username" class="label-text">Username</label>
+                            <input type="text" class="iot" id="Username" placeholder="Enter your username" required>
+    
+                            <label for="password" class="label-text">Password</label>
+                            <input type="password" class="iot" id="password" placeholder="Enter your password" required>
+                            
+                            <label for="password" class="label-text">Confirm Password</label>
+                            <input type="password" class= "iot" id="password" placeholder="Re-enter your password" required>
+                        
+                           <button type="button" class="submit-btn" onclick="check(this.form)" value="submit">SignIn</button>
+        
+                         </div>     
+                </form>
+             </div>
+            
+    
+    
+    
+                <!-- <a href="#" class="topButtons">SignIn</a>-->
+                <button class ="top" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SignIn</button>
+                <div id="id01" class="modal">
+      
+                    <form class="modal-content " action="#">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        
+                        </div>
+        
+                               <div class="hi"> 
+                            <h3> Welcome back! </h3>
+                            <div class= "horizontal-line"></div>
+                          
+                           
+                                     
+                                    <label for="Username" class="label-text">Username</label>
+                                    <input type="text" class="hot" id="Username" placeholder="Enter your username" required>
+    
+    
+                                    <br><label for="password" class="label-text">Password</label>
+                                    <input class="hot" id="password" type="password"  placeholder="Enter your password" required>
+                                 
+                        <button type="button" class="submit-btn" value="submit">SignIn</button>
+                        <p>Not a member? <span class="signUp" onclick="document.getElementById('id01').style.display='none',document.getElementById('id02').style.display='block'">SignUp</span></p>
+                        
+                    </div>     
+                    </form>
+                </div>
+            </div>
+     </div>
+     <h1 class="title" id="border">Everything you should know about 'module' & 'require' in Node.js</h1>
+     <span class="name">Srishti Gupta</span>
+
+     <button onclick="get_a()"  class="butt" id="edit">Edit <span><i class="fa fa-edit" aria-hidden="true"></i></span></button>
+     <button onclick="get_b()"  class="butt" id="save">Save <span><i class="class='fa fa-save'" aria-hidden="true"></i></span></button>
+
+     <p class="para" id="data">Node js treats each JavaScript file as a separate module. For instance, if you have a file containing can say that you've created a module named xyz Let's take an example to understand this better. You have a file named circle js which consists of the logic for calculating the area & the
+
+        circumference of a circle of a given radius You can call circle js file a module named circle.
+        
+        You might be wondering why is there a need to have multiple modules? You could have just
+        
+        By modular, I mean to say that your code should be independent and should be loosely coupled.
+        
+        written all the code in a single module Well, it is very important to write modular code Imagine that there's a large application and you have all your code written in just one place, just one file Too messy, right? How does the code written inside a module run? Before executing the code written inside a module, Node takes the entire code and encloses it within a function wrapper The syntax of this function wrapper 1 private to the module, unless explicitly stated exported) otherwise The enter code written inside a module 1 This is the most significant advantage of having modules in Node js Even if you define a global variable in a module uung var, let or const keywords, the variables are scoped locally to the module rather than being scoped globally. This happens because cach module has a function wrapper of its own and the code Written inside one function is local to that function and cannot be accessed outside this function. Imagine that there are two modules A and B enclosed within the function wrapper corresponding to the module A Similar thing happens enclosed within different functions, these functions will not be able to access the code of each other The code written anside the module A with the code written inside the module B Because the code pertaining to both the modules s (Remember each function in JavaScript has its own local scope 7) This is the reason why
+        
+        in a module
+        
+        module A cannot access the code written inside module B and vice-versa. The five parameters- exports, require, module,filename,duname are available inside each module in Node Though these parameters are global to the code within a module yet they are local to the module (because of the function wrapper as explained above). These parameters provide valuable information related to a module Let's revisit the circle module, which you looked at earlier There are three constructs defined in this module calculate Area and another function named calculate Circumference An important point a constant variable PI, a function named to keep in mind is that all these constructs are private to the circle module by default It means that you cannot use these constructs in any other module unless explicitly specified. So, the question that anses now is how do you specity something in a module that can be used by some other module? This is u hen the module & require parameters of the function wrapper are helpful. Let's discuss these vo parameters in this article module The module parameter (rather a keyword in Node) tefers to the object representing the current module exports i a key of the module object, the corresponding value of which s an object. The default value of module exports object is empty object) You can check this by logging the value of module keyword inside any module Let's check what in the value of module parameters inside the circle module Notice that there is a console loginmodule) statement at the end of the code in the file given above When you see the output, it will log the module object, which basako named exports and the value corresponding to this key is Whatever is an empty object) Now, what does the module exports object do Well it is used for defining stuff that can be exported by a module exported from a module can, in turn, be made available to other modules Exporting something is quite easy. You just need to add it to the module exports object There are three ways to add something to the module exports object to be exported Let's discuss these
+        
+        methods one by one.</p>
+
+        <button onclick= "thumbup()" class="like" id="liking"><span class="thumbs"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span> Like</button>
+        <p class="counts" id="count">Be the first one to like this!</p>
+
+
+        <div class="commentContainer">      
+            <form class="commentoi"> 
+            <label for="commentCont"></label>
+                            <textarea placeholder="Leave a comment..." id="commentContent" rows="5" cols="80" name="Content"></textarea> <br>
+                            <button type="button" class="newComment" onClick="addComment()">Comment</button>
+            </form>
+            <p class="CommentsHead">All Comments</p> 
+            <div class="CommentsBox" id= "commentBox"> 
+               <div class="contentOfComment">                                          
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="C:/Users/pooji/Desktop/mainproject/scripts/post.js" async defer></script>
+    </body>
+    </html>

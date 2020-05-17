@@ -1,0 +1,426 @@
+body{
+    background-color: #ffeedd;
+}
+div.header {
+    display: flex;
+    flex-direction: row;
+}
+
+div.header2 {
+    left: 1200px;
+    position: relative;
+}
+#font1 {
+    font-size: 38px;
+    font-family: 'Montez', cursive;
+    color: blue;
+
+}
+#font2 {
+    font-size:small;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    color:blueviolet;
+}
+
+.top {
+    size: 100px;
+    background-color:#346beb;
+	color:white;
+    padding: 10px;
+    display:inline-flex;
+    text-decoration: none;
+    list-style-type:none;	
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.one{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.four1{
+    /* 5% from the top, 15% from the bottom and centered */
+    width: 100%;
+    height:100%; /* Could be more or less, depending on screen size */
+    position:fixed;
+
+}   
+.header-items{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.postmain{
+    display:  flex;
+    margin: 1%;
+    margin-left: 2%;
+    border-radius: 20px;
+    width: 40%;
+    height: 150%;
+    
+   
+}
+.postmain:hover{
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+
+#postcontainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+   
+
+}
+.nameinpost{
+    width:25px;
+    margin:2px;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.postcont{
+    background-color:lightgray;
+     border-bottom-right-radius: 20px;
+     border-top-right-radius: 20px;
+     text-align: center;
+     padding: 1%;
+}
+.heading{
+    color:gray;
+    font-weight: bold;
+    font-size: 10px;
+}
+.material-icons{
+    float: right;
+    font-weight: bolder;
+    margin-top:-10px;
+    color:grey;
+    border: 0;
+    background-color: lightgrey;
+}
+.deletePost{
+    margin-left: 20%;
+}
+.material-icons:hover{
+    cursor:pointer;
+
+}
+#trashicon{
+    width:375px;
+    background-color: white;
+    margin-top: 15%; 
+    font-weight: bolder;
+    margin-left:2%; 
+    display:none;
+    position: absolute;
+
+    
+}
+#trashmodalcontainer{
+  width: 100%; 
+  height: 100%; 
+  position: absolute;
+  top:0;
+  display:none;
+  margin-left: 10px;
+  
+  
+}
+.sub1{
+    background-color: green;
+    color:white;
+    width:60px;
+    margin-left:32px;
+    border:none;
+    width:60px;
+    margin:15px;
+
+}
+.sub2{
+
+    color:white;
+    background-color: red;
+    width:60px;
+    margin:15px;
+    border:none;
+    margin-left: 180px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+  .fa-ellipsis-h{
+    margin-top: -9px;
+    float: right;
+    font-size: 15px;
+    color:grey;
+    margin-right: 5px;
+  }
+  .fa-ellipsis-h:hover{
+      cursor:pointer;
+  }
+  @media (max-width:300px){
+      #postcontainer{
+          width:80%;
+
+      }
+  }
+ .firstheading{
+     display:flex;
+     flex-direction: row;
+     color:grey;
+ }
+ #d5{
+     margin-top: 30px;
+ }
+ .modalinput{
+    width:353px;
+}
+
+
+.center1 {
+    size: 60px;
+    color:black ;
+    background-color:#ffd633;
+    padding: 8px;
+    width: 100px;
+    margin-right: 16px;
+    
+}
+.center1:hover,
+.center1:focus {
+    background-color:#346beb;
+    cursor: pointer;
+    color:white;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.secondimg{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.one{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content  {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%;
+    height:65%; /* Could be more or less, depending on screen size */
+             /*depend on the height*/
+}
+.second-signUp{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 25%;
+    height:80%; /* Could be more or less, depending on screen size */
+}   
+      
+
+/* The Close Button (x) */
+.close {
+    position:absolute;
+    right: 25px;
+    top: 0;
+    color:gray;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+}
+
+.label-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+.iot{
+    font-weight:bold;
+    background-color: lightgray;
+    border:none;
+    width:90%
+}
+.bye{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin-left: 5%;
+    }
+    .submit-btn {
+        background-color:green;
+        width:96%;
+        color: #fff;
+        padding: 3%;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .hi{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .hot{
+        font-weight:bold;
+    background-color: lightgray;
+    border:none;
+    width:90%
+
+    }
+    .horizontal-line{
+        width:96%;
+        height:2px;
+        background-color: silver;
+    }
+
+/*centerbuttons*/
+    .para{
+        color:gray;
+        text-align: start;
+        margin-left:2%;
+    }
+    .horizontal-line1{
+        width:94%;
+        height:2px;
+        background-color: silver;
+    }
+    .btn{
+        background-color:green;
+        text-align: center;
+        width:20%;
+        color: #fff;
+        padding: 1%;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+        margin:0;
+        position: relative;
+        transform:translate(200%,-10%);
+        
+    }
+
+a {
+    font-size: 14px;
+    color: #186CA3;
+    text-decoration: none;
+}
+
+  #text{
+        
+        margin-top:10px;
+        width:92%;
+        height:90%;
+        }
+ 
+
+
+#Username{
+    width:90.5%;
+
+}
+.input-board{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+.signUp{
+    color: blue;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}
+.nameley{
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    padding: 1%;
+}

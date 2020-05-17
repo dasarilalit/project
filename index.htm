@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>ScriBBler</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+
+<body>
+
+    <div class="header">
+	
+        <div class = "header1"> 
+            <header id="font1">ScriBBler</header>
+            <h5 id='font2'>Explore, Imagine, Create</h5>
+        </div> 
+		
+        <div class = "header2">
+            <button class ="top" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">SignUp</button>
+         <div id="id02" class="one"> 
+
+
+           <form class="second-signUp" action="#">
+            <div class="secondimg">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+                   <div class="bye"> 
+                <h3> Get started </h3>
+                
+                <div class= "horizontal-line"></div>
+                         
+                        <label for="Name" class="label-text">Name</label>
+                        <input type="text" class="iot" id="Username" placeholder="Enter your name"  name =""required="">
+
+
+                        <label for="username" class="label-text" required>Username</label>
+                        <input type="text" class="iot" id="Username" placeholder="Enter your username"  name =""required="">
+
+                        <label for="password" class="label-text">Password</label>
+                        <input type="password" class="iot" id="password" placeholder="Enter your password"  name =""required="">
+                        
+                        <label for="password" class="label-text">Confirm Password</label>
+                        <input type="password" class= "iot" id="password" placeholder="Re-enter your password"  name =""required="">
+                    
+                       <button type="submit" class="submit-btn" onclick="check(this.form)" name =""value="submit">SignIn</button>
+    
+                     </div>     
+            </form>
+         </div>
+        
+
+
+
+            <!-- <a href="#" class="topButtons">SignIn</a>-->
+            <button class ="top" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SignIn</button>
+            <div id="id01" class="modal">
+  
+                <form class="modal-content " action="#">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    
+                    </div>
+    
+                           <div class="hi"> 
+                        <h3> Welcome back! </h3>
+                        <div class= "horizontal-line"></div>
+                      
+                       
+                                 
+                                <label for="username" class="label-text">Username</label>
+                                <input type="text" class="hot"id="Username" placeholder="Enter your username" name =""required="">
+
+
+                                <br><label for="password" class="label-text">Password</label>
+                            <input type="password" class="hot" id="password" placeholder="Enter your password" name =""required="">
+                             
+                             
+                            <button type="sbmit" class="submit-btn" name=""value="submit">SignIn</button>
+                            <p>Not a member? <span class="signUp" onclick="document.getElementById('id01').style.display='none',document.getElementById('id02').style.display='block'">SignUp</span></p>
+                    
+                </div>     
+                </form>
+      
+            </div>
+  </div>
+
+
+
+
+ </div>
+		
+    </div> 
+    <script>
+      
+         </script>
+         
+	
+    <div class ="centermain">
+        <button class ="center1" onclick="window.location.href ='postslist.htm';">All Post</button>
+        <div id="id04" class="four">
+    </div>
+</form>
+
+
+
+
+
+        <button class ="center1" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Create Post</button>
+         <div id="id03" class="three">
+
+        <form class="thrid-signUp" action="#">
+
+            <div class="thridimg">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+
+
+               <div class="para">
+               <h3> Pen your post </h3>
+               
+               <div class= "horizontal-line1"></div>   
+                </div>
+
+            <div class="hello"> 
+                <form>
+                     
+                    <label for="Name" class="label-text1">Title</label></br>
+                     <input type="text" class="mec" id="Username" placeholder="Enter title of your post" required></br>
+
+                     <label for="Name" class="label-text1">Content</label>
+                    <textarea id="text"  class="mec" rows="10" col="10">Enter the contents of your posts</textarea></br>
+                  <button  type="button" class="btn" onclick="check(this.form)" value="submit">Create</button>
+                  </form>
+               </div>  
+           </div>
+            </form>
+         
+        
+    </div>
+    <script src =".\script\index.js"></script>
+    <script src="..\s\postslist.js">  </script>
+    </body>
+	</html>
+            
+        
+            

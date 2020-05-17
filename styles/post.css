@@ -1,0 +1,273 @@
+body {
+   
+    background-size: 100%;
+}
+
+div.header {
+    display: flex;
+    flex-direction: row;
+}
+
+div.header2 {
+    left: 1200px;
+    position: relative;
+}
+#font1 {
+    font-size: 38px;
+    font-family: 'Montez', cursive;
+    color: blue;
+
+}
+#font2 {
+    font-size:small;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    color:blueviolet;
+}
+
+.top {
+    size: 100px;
+    background-color:#346beb;
+	color:white;
+    padding: 10px;
+    display:inline-flex;
+    text-decoration: none;
+    list-style-type:none;	
+}
+
+.four1{
+    /* 5% from the top, 15% from the bottom and centered */
+    width: 100%;
+    height:100%; /* Could be more or less, depending on screen size */
+    position:fixed;
+
+}   
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.secondimg{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.one{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.modal-content  {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%;
+    height:65%; /* Could be more or less, depending on screen size */
+             /*depend on the height*/
+}
+.second-signUp{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;/* 5% from the top, 15% from the bottom and centered */
+ border: 1px solid #888;	
+    width: 25%;
+    height:80%; /* Could be more or less, depending on screen size */
+}   
+.close {
+    position:absolute;
+    right: 25px;
+    top: 0;
+    color:gray;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+}
+
+.label-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+.iot{
+    font-weight:bold;
+    background-color: lightgray;
+    border:none;
+    width:90%
+}
+.bye{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin-left: 5%;
+    }
+    .submit-btn {
+        background-color:green;
+        width:96%;
+        color: #fff;
+        padding: 3%;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .hi{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .hot{
+    font-weight:bold;
+    background-color: lightgray;
+    border:none;
+    width:90%
+
+    }
+    .horizontal-line{
+        width:96%;
+        height:2px;
+        background-color: silver;
+    }
+	.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.secondimg{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.signUp{
+    color: blue;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}
+.title {
+    text-align: center;
+    margin-top: 2%;
+}
+.name {
+    font-family: cursive;
+	 font-size: 160%;
+     margin-left: 2%;
+}
+
+.para {
+    margin: 2%;
+    font-weight: lighter;
+}
+.like {
+    border: 0;
+    background-color: #ed2553;
+    color: white;
+    height: 35px;
+    width: 6%;
+    margin-left: 2%;
+    box-shadow: 0 5px 20px -5px purple;
+}
+.counts{
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 78%;
+}
+.CommentsHead {
+    font-weight: bolder;
+    margin-right: 90%;
+}
+
+.CommentsBox {
+    background-color: #E2E4E6;  
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    width: 60%;
+}
+.newComment {
+    background-color: #ed2553;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;  
+    max-width: 100px; 
+    font-weight: 400; 
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+}
+#commentCont{
+    width:60%;
+}
+.commentoi{
+display: inline-table;
+padding: 10px;
+width: 100%;
+margin-top: 20px;
+}
+#save{
+    display: none;
+        border: 0;
+        background-color: #ed2553;
+        color: white;
+        margin: 10px 10px 10px 10px;
+        float: right;
+        cursor: pointer;
+        height: 35px;
+        width: 6%;
+        box-shadow: 0 5px 20px -5px purple;
+    }
+#edit{
+        border: 0;
+        background-color: #ed2553;
+        color: white;
+        margin: 10px 10px 10px 10px;
+        float: right;
+        cursor: pointer;
+        height: 35px;
+        width: 6%;
+        box-shadow: 0 5px 20px -5px purple;
+    }
+
+

@@ -1,0 +1,11 @@
+#font1 {
+    font-size: 38px;
+    font-family: 'Montez', cursive;
+    color: blue;
+
+}
+#font2 {
+    font-size:small;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+}
